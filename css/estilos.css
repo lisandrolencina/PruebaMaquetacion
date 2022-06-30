@@ -1,0 +1,306 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f8f8f8;
+}
+
+/* Logo + Inversiones + Salir*/
+.logos{
+    display: flex;
+}
+.inversiones{
+    width: 280px;
+    position: relative;
+    left: 70px;
+}
+.salir  {
+    display: flex;
+    position: absolute;
+    left: 90%;
+    top: 2%;
+    padding: 10px 20px;
+    border:2px solid #23bcf8 ;
+    background-color: white;
+    border-radius: 40px;
+    color: #23bcf8;
+    transition: transform 0.3s ease;
+}
+/* NAVBAR*/
+.navbar{
+background-image: linear-gradient(to left,#23bcf8,#0063B1);
+}
+.navbar-nav{
+    font-size: 20px;
+    position: relative;
+    left:20%;
+}
+.navbar-nav a{
+    color: white;
+   margin:  0 40px;
+}
+.navbar-nav a:hover{
+    color: rgb(201, 201, 201);
+}
+/* Arreglar con quierys 1309px*/
+
+/* Tarjetas */
+.tarjetas{
+    margin: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  
+       
+}
+
+.cards{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.card-img-bonos{
+    width: 80px;
+    position: relative;
+    left: 70%;
+    top: -15%;
+}
+.tarjetas .cards h2{
+     font-size: 20px;
+     color: #0063B1;
+     margin: 10px 10px;
+     font-family: 'Roboto', sans-serif;
+     font-weight: 600;
+     
+}
+.texto-caja{
+    margin-left: 12px;
+    margin-top: -50px;
+}
+.titulo-gris{
+
+font-size:15px;
+font-family: 'Roboto', sans-serif;
+color: rgb(172, 172, 172);
+
+}
+
+.pesos{
+    font-size:20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #0063B1;
+}
+
+.linea {
+    width: 270px;
+    border: 1px solid grey;
+    font-display: flex;
+   
+}
+
+.tenencias{
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: #0063B1;
+}
+
+.iconos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards .iconos button{
+    padding: 10px 20px;
+    border:2px solid #0063B1 ;
+    background-color: #0063B1;
+    border-radius: 40px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+.cards .iconos p{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #0063B1;
+    font-weight: 500;
+}
+
+.cards .iconos .boton{
+    margin-top: 45px;
+    padding: 10px 20px;
+    border:2px solid #0063B1 ;
+    background-color: #0063B1;
+    border-radius: 40px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+h2{
+    font-size: 40px;
+    color: #0063B1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+/* Tablas */
+.container{
+    background-color: white;
+}
+.bonosacciones{
+    display: flex;
+}
+.lineas{
+    display: flex;
+    
+}
+.bon{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.oscuro{
+    width: 5%;
+    border: 2px solid #0063B1;
+
+    }
+.claro{
+        width: 100%;
+        border: 2px solid rgb(207, 206, 206);
+    }
+.acc{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: grey;
+    margin-left: 20px;
+}
+
+
+.table{
+    color: grey;
+}
+
+ 
+.btn-group{
+    margin-left: 70%;
+}
+/*Media querys*/
+@media  screen and (max-width:1490px){
+
+
+    .navbar-nav{
+        left:0%;
+    }
+
+    .tarjetas{
+        margin: 90px 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    
+}
+
+@media  screen and (max-width:1251px){
+
+    .tarjetas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+           
+    }
+    .cards{
+        margin: 20px;
+    }
+    
+}
+
+@media  screen and (max-width:991px){
+
+    .inversiones{
+        display: none;
+    }
+    .salir  {
+        display: flex;
+        position: absolute;
+        left: 80%;
+        top: 2%;
+        padding: 10px 20px;
+       
+    }
+    .oscuro{
+        width: 10%;
+        border: 2px solid #0063B1;
+    
+    }
+
+    .navbar{
+        background-image: none;
+        }
+}
+
+@media  screen and (max-width:767px){
+
+    .img-cotizaciones{
+        display: none;
+    }
+    h2{
+        font-size: 30px;
+        
+    }
+    .container{
+        background-color: #f8f8f8  ;
+    }
+    
+}
+@media  screen and (max-width:663px){
+
+    .tarjetas{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 10%;
+           
+    }
+    .cards{
+        margin: 20px 0px;
+    }
+    .navbar-nav a{
+        color: rgb(0, 0, 0);
+       margin:  0 0 ;
+    }
+
+    
+    }
+
+    @media  screen and (max-width:320px){
+        .salir  {
+           left: 70%;
+            top: 2%;
+           
+        }
+        .oscuro{
+            width: 30%;
+            border: 2px solid #0063B1;
+        
+        }
+        .logo{
+            width: 180px;
+        }
+        }
+    
+
+
